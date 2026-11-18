@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="筋トレの記録と成長を楽しく管理するトレーニングページ">
+  <title>MY TRAINING | 筋トレ記録</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav><span class="logo">MY<span>TRAINING</span></span><a href="#record">記録する</a></nav>
+    <div class="hero-content">
+      <p class="eyebrow">ONE MORE REP. ONE STEP STRONGER.</p>
+      <h1>昨日の自分を、<br><span>超えていけ。</span></h1>
+      <p class="lead">トレーニングを記録して、自分の成長を見える形に。</p>
+      <a class="cta" href="#record">トレーニングを記録する ↘</a>
+    </div>
+    <div class="hero-mark">TRAIN<br>HARD.</div>
+  </header>
+
+  <main>
+    <section class="stats">
+      <div><p class="label">BENCH PRESS</p><p class="number">125<span>kg</span></p></div>
+      <div><p class="label">DEADLIFT</p><p class="number">200<span>kg</span></p></div>
+      <div><p class="label">SQUAT</p><p class="number">130<span>kg</span></p></div>
+      <div><p class="label">TOTAL</p><p class="number">455<span>kg</span></p></div>
+    </section>
+
+    <section class="section" id="record">
+      <div class="section-heading">
+        <p class="eyebrow">WORKOUT LOGGER</p>
+        <h2>今日のトレーニング</h2>
+        <p>種目・重量・回数を入力して記録しよう。</p>
+      </div>
+      <form id="workout-form" class="form">
+        <label>トレーニング種目
+          <input id="exercise" type="text" placeholder="例：ベンチプレス" required>
+        </label>
+        <div class="form-row">
+          <label>重量（kg）
+            <input id="weight" type="number" min="0" step="0.5" placeholder="例：100" required>
+          </label>
+          <label>回数
+            <input id="reps" type="number" min="1" placeholder="例：5" required>
+          </label>
+        </div>
+        <button type="submit">記録を追加 ＋</button>
+      </form>
+      <div class="records-heading"><h3>トレーニング記録</h3><button id="clear" class="clear">すべて削除</button></div>
+      <ul id="records" class="records"><li class="empty">まだ記録がありません。最初の記録を追加しよう！</li></ul>
+    </section>
+
+    <section class="quote">
+      <p class="eyebrow">KEEP GOING</p>
+      <h2>積み重ねた1回が、<br>未来の自分をつくる。</h2>
+      <p>焦らず、比べず、自分のペースで続けよう。</p>
+    </section>
+  </main>
+  <footer>© 2026 MY TRAINING / KEEP PUSHING.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
